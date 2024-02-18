@@ -183,7 +183,7 @@ class PyIconButton(QPushButton):
 
     # DRAW ICON WITH COLORS
     # ///////////////////////////////////////////////////////////////
-    def icon_paint(self, qp, image, rect):
+    def icon_paint(self, qp: QPainter, image, rect):
         icon = QPixmap(image)
         painter = QPainter(icon)
         painter.setCompositionMode(QPainter.CompositionMode_SourceIn)
@@ -192,8 +192,8 @@ class PyIconButton(QPushButton):
         else:
             painter.fillRect(icon.rect(), QColor(self._set_icon_color))
         qp.drawPixmap(
-            (rect.width() - icon.width()) / 2, 
-            (rect.height() - icon.height()) / 2,
+            (rect.width() - icon.width()) // 2, 
+            (rect.height() - icon.height()) // 2,
             icon
         )        
         painter.end()
