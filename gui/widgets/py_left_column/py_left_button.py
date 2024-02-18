@@ -188,9 +188,9 @@ class PyLeftButton(QPushButton):
         painter = QPainter(icon)
         painter.setCompositionMode(QPainter.CompositionMode_SourceIn)
         if self._is_active:
-            painter.fillRect(icon.rect(), self._context_color)
+            painter.fillRect(icon.rect(), QColor(self._context_color))
         else:
-            painter.fillRect(icon.rect(), self._set_icon_color)
+            painter.fillRect(icon.rect(), QColor(self._set_icon_color))
         qp.drawPixmap(
             (rect.width() - icon.width()) / 2, 
             (rect.height() - icon.height()) / 2,

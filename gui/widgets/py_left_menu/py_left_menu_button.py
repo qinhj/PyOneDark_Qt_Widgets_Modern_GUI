@@ -236,7 +236,7 @@ class PyLeftMenuButton(QPushButton):
         icon = QPixmap(image)
         painter = QPainter(icon)
         painter.setCompositionMode(QPainter.CompositionMode_SourceIn)
-        painter.fillRect(icon.rect(), color)
+        painter.fillRect(icon.rect(), QColor(color))
         qp.drawPixmap(
             (rect.width() - icon.width()) / 2, 
             (rect.height() - icon.height()) / 2,
@@ -250,7 +250,7 @@ class PyLeftMenuButton(QPushButton):
         icon = QPixmap(image)
         painter = QPainter(icon)
         painter.setCompositionMode(QPainter.CompositionMode_SourceIn)
-        painter.fillRect(icon.rect(), self._bg_one)
+        painter.fillRect(icon.rect(), QColor(self._bg_one))
         qp.drawPixmap(width - 5, 0, icon)
         painter.end()
 
