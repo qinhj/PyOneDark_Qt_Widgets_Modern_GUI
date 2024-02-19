@@ -48,7 +48,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        # SETUP MAIN WINDOw
+        # SETUP MAIN WINDOW
         # Load widgets from "gui\uis\main_window\ui_main.py"
         # ///////////////////////////////////////////////////////////////
         self.ui = UI_MainWindow()
@@ -179,7 +179,7 @@ class MainWindow(QMainWindow):
 
             # Get Left Menu Btn            
             top_settings = MainFunctions.get_left_menu_btn(self, "btn_settings")
-            top_settings.set_active_tab(False)            
+            top_settings.set_active_tab(False)
 
         # DEBUG
         print(f"Button {btn.objectName()}, clicked!")

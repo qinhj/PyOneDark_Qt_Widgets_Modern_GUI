@@ -50,7 +50,7 @@ from . functions_main_window import *
 class SetupMainWindow:
     def __init__(self):
         super().__init__()
-        # SETUP MAIN WINDOw
+        # SETUP MAIN WINDOW
         # Load widgets from "gui\uis\main_window\ui_main.py"
         # ///////////////////////////////////////////////////////////////
         self.ui = UI_MainWindow()
@@ -125,7 +125,7 @@ class SetupMainWindow:
         }
     ]
 
-     # ADD TITLE BAR MENUS
+    # ADD TITLE BAR MENUS
     # ///////////////////////////////////////////////////////////////
     add_title_bar_menus = [
         {

@@ -30,7 +30,7 @@ from . ui_main import *
 class MainFunctions():
     def __init__(self):
         super().__init__()
-        # SETUP MAIN WINDOw
+        # SETUP MAIN WINDOW
         # Load widgets from "gui\uis\main_window\ui_main.py"
         # ///////////////////////////////////////////////////////////////
         self.ui = UI_MainWindow()
